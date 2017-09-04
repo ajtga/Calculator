@@ -6,3 +6,5 @@ def division(a,b):
         return("Error! Division by 0")
     else:
         return a/b
+def square_root(a):
+    return (a**(1/2))
