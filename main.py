@@ -13,8 +13,12 @@ operations = OrderedDict([('Add', arith.addition),
 def menu(operations,ans=None):
     for i, operation in enumerate(operations):
         print("%i - %s" % (i+1, operation))
-    option = int(input('\nChoose an operation: ')) - 1
-    option = list(operations.keys())[option]
+    print("Q - Quit")
+    option = input('\nChoose an operation: ')
+    if option.upper()=="Q":
+        print("Good bye!")
+        return None
+    option = list(operations.keys())[int(option) - 1]
     print('\n' + option.upper())
     try:
         result = operations[option](ans)
