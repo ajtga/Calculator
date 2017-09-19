@@ -4,6 +4,7 @@ from collections import OrderedDict
 
 
 def menu(operations, ans=None):
+    print()
     for i, operation in enumerate(operations):
         print("%i - %s" % (i+1, operation))
     print("Q - Quit")
