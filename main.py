@@ -26,7 +26,10 @@ def menu(operations, ans=None):
             result = operations[option](number)
         except:
             result = operations[option](ans, number)
-    print('\nResult:', result)
+    if result.is_integer():
+        print('\n    RESULT:', int(result))
+    else:
+        print('\n    RESULT:', result)
     menu(operations, result)
 
 
