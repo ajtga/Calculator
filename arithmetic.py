@@ -6,8 +6,9 @@ def division(a,b):
         return("Error! Division by 0")
     else:
         return a/b
-def square_root(a):
-    return (a**(1/2))
 
 def nth_root(a,b):
     return (a**(1/b))
+
+def square_root(a):
+    return nth_root(a,2)
