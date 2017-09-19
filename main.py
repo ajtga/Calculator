@@ -7,8 +7,12 @@ def menu(operations, ans=None):
     print()
     for i, operation in enumerate(operations):
         print("%i - %s" % (i+1, operation))
-    print("Q - Quit")
+    print("C - Clear\nQ - Quit")
     option = input('\nChoose an operation: ')
+    if option.upper() == "C":
+        print("\nCleared.\n\n")
+        ans = float(input('\nInsert a number: '))
+        return menu(operations, ans)
     if option.upper() == "Q":
         print("Good bye!")
         return None
