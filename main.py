@@ -2,14 +2,7 @@ import arithmetic as arith
 import trigonometric as trig
 from collections import OrderedDict
 
-operations = OrderedDict([('Add', arith.addition),
-                          ('Divide', arith.division),
-                          ('Square root', arith.square_root),
-                          ('nth root', arith.nth_root)])
 
-
-
-    
 def menu(operations,ans=None):
     for i, operation in enumerate(operations):
         print("%i - %s" % (i+1, operation))
@@ -32,5 +25,9 @@ def menu(operations,ans=None):
     menu(operations,result)
 
 if __name__ == '__main__':
+    operations = OrderedDict([('Add', arith.addition),
+                              ('Divide', arith.division),
+                              ('Square root', arith.square_root),
+                              ('nth root', arith.nth_root)])
     ans = int(input('\nInsert a number: '))
     menu(operations,ans)
