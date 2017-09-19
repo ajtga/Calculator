@@ -3,12 +3,12 @@ import trigonometric as trig
 from collections import OrderedDict
 
 
-def menu(operations,ans=None):
+def menu(operations, ans=None):
     for i, operation in enumerate(operations):
         print("%i - %s" % (i+1, operation))
     print("Q - Quit")
     option = input('\nChoose an operation: ')
-    if option.upper()=="Q":
+    if option.upper() == "Q":
         print("Good bye!")
         return None
     option = list(operations.keys())[int(option) - 1]
@@ -20,9 +20,9 @@ def menu(operations,ans=None):
         try:
             result = operations[option](number)
         except:
-            result = operations[option](ans,number)
+            result = operations[option](ans, number)
     print('\nResult:', result)
-    menu(operations,result)
+    menu(operations, result)
 
 if __name__ == '__main__':
     operations = OrderedDict([('Add', arith.addition),
@@ -30,4 +30,4 @@ if __name__ == '__main__':
                               ('Square root', arith.square_root),
                               ('nth root', arith.nth_root)])
     ans = int(input('\nInsert a number: '))
-    menu(operations,ans)
+    menu(operations, ans)
