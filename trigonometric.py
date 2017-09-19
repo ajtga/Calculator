@@ -1,4 +1,4 @@
 import math
 
-def tangent(x):
-    return math.tan(x)
+def arcsine(x):
+    return math.asin(x)
