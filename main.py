@@ -16,7 +16,7 @@ def menu(operations, ans=None):
     try:
         result = operations[option](ans)
     except:
-        number = int(input('\nInsert a number: '))
+        number = float(input('\nInsert a number: '))
         try:
             result = operations[option](number)
         except:
@@ -29,5 +29,5 @@ if __name__ == '__main__':
                               ('Divide', arith.division),
                               ('Square root', arith.square_root),
                               ('nth root', arith.nth_root)])
-    ans = int(input('\nInsert a number: '))
+    ans = float(input('\nInsert a number: '))
     menu(operations, ans)
