@@ -29,6 +29,7 @@ def menu(operations, ans=None):
     print('\nResult:', result)
     menu(operations, result)
 
+
 if __name__ == '__main__':
     operations = OrderedDict([('Add', arith.addition),
                               ('Divide', arith.division),
