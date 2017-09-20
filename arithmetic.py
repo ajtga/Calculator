@@ -12,3 +12,6 @@ def nth_root(a,b):
 
 def square_root(a):
     return nth_root(a,2)
+
+def cubic_rooth(a):
+    return nth_root(a, 3)
