@@ -3,7 +3,7 @@ import trigonometric as trig
 from collections import OrderedDict
 
 
-def print_operations():
+def print_operations(operations):
     print()
     for i, operation in enumerate(operations):
         print("%i - %s" % (i+1, operation))
@@ -46,7 +46,7 @@ def print_result(result):
         
         
 def menu(operations, ans=None):
-    print_operations()
+    print_operations(operations)
     option = input('\nChoose an operation: ')
     if option.upper() == "C":
         return clean_calculator()
