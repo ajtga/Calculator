@@ -12,8 +12,12 @@ def division(a,b):
         return("Error! Division by 0")
     else:
         return a/b
+    
 def square_root(a):
     return nth_root(a,2)
+
+def cube_root(a):
+    return (a**(1/3))
 
 def cube_root(a):
     return (a**(1/3))
