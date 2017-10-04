@@ -3,8 +3,8 @@ def print_operations(operations):
     for i, operation in enumerate(operations):
         print("%i - %s" % (i+1, operation))
     print("C - Clear\nQ - Quit")
-    
-    
+
+
 def clean_calculator(operations):
     print("\nCleared.\n\n")
     ans = float(input('\nInsert a number: '))
@@ -20,7 +20,7 @@ def get_operation_by_index(operations, index):
     option = list(operations.keys())[index - 1]
     print('\n' + option.upper())
     return option
-    
+
 
 def get_result(function, a):
     try:
@@ -32,14 +32,16 @@ def get_result(function, a):
         except:
             return function(a, number)
 
-    
+
 def print_result(result):
-    if result.is_integer():
-        print('\n    RESULT:', int(result))
-    else:
-        print('\n    RESULT:', result)
-        
-        
+    try:
+        if result.is_integer():
+            print('\n    RESULT:', int(result))
+        else:
+            print('\n    RESULT:', result)
+    except:
+        print(result)    
+
 def menu(operations, ans=None):
     print_operations(operations)
     option = input('\nChoose an operation: ')
