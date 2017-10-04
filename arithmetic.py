@@ -31,7 +31,7 @@ def square_root(a):
     return nth_root(a, 2)
 
 
-def cubic_rooth(a):
+def cubic_root(a):
     """Returns the cubic root of the number a"""
     return nth_root(a, 3)
 
