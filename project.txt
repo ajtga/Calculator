@@ -6,15 +6,13 @@ Calculator
         - trigonometric.py
         - logarithmic.py
         - loarithmic.py
+        - tests.py
     - interface/
         - __init__.py
         - gui.py
+        - tests.py
     - database/
         - __init__.py
         - models.py
-    - tests/
-        - __init__.py
-        - arithmetric.py
-        - trigonometric.py
-        - logarithmic.py
+        - tests.py
     - main.py
