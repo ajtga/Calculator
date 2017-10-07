@@ -1,0 +1,18 @@
+Hierarchy proposal
+
+Calculator
+    - math/
+        - __init__.py
+        - trigonometric.py
+        - logarithmic.py
+        - loarithmic.py
+    - interface/
+        - __init__.py
+        - gui.py
+    - database/
+        - models.py
+    - tests/
+        - arithmetric.py
+        - trigonometric.py
+        - logarithmic.py
+    - main.py
