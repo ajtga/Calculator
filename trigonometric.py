@@ -31,3 +31,11 @@ def cosecant(x):
     except ZeroDivisionError:
         print('\nERROR! Division by zero.')
         return False
+
+
+def secant(x):
+    try:
+        return 1/math.cos(x)
+    except ZeroDivisionError:
+        print('\nERROR! Division by zero.')
+        return False
