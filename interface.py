@@ -33,14 +33,15 @@ def get_result(function, a):
             return function(a, number)
 
 
-def print_result(result):
-    try:
+def print_result(result, operations):
+    if result:
         if result.is_integer():
             print('\n    RESULT:', int(result))
         else:
             print('\n    RESULT:', result)
-    except:
-        print(result)    
+    else:
+        return clean_calculator(operations)
+
 
 def menu(operations, ans=None):
     print_operations(operations)
@@ -51,5 +52,5 @@ def menu(operations, ans=None):
         return quit_calculator()
     chosen = operations[get_operation_by_index(operations, int(option))]
     result = get_result(chosen, ans)
-    print_result(result)
+    print_result(result, operations)
     menu(operations, result)

@@ -16,7 +16,8 @@ def multiplication(a, b):
 def division(a, b):
     """Returns the division of the number a by the number b"""
     if b == 0:
-        return("Error! Division by 0")
+        print("\nERROR! Division by 0")
+        return False
     else:
         return a/b
 
