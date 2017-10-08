@@ -39,3 +39,11 @@ def secant(x):
     except ZeroDivisionError:
         print('\nERROR! Division by zero.')
         return False
+
+
+def cotangent(x):
+    try:
+        return 1/math.tan(x)
+    except ZeroDivisionError:
+        print('\nERROR! Division by zero.')
+        return False
