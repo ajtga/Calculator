@@ -19,3 +19,7 @@ def arcsine(x):
 
 def arccosine(x):
     return math.acos(x)
+
+
+def arctangent(x):
+    return math.atan(x)
