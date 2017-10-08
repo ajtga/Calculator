@@ -1,33 +1,33 @@
-import math
+from math import sin, cos, tan, asin, acos, atan
 
 
 def sine(x):
-    return math.sin(x)
+    return sin(x)
 
 
 def cosine(x):
-    return math.cos(x)
+    return cos(x)
 
 
 def tangent(x):
-    return math.tan(x)
+    return tan(x)
 
 
 def arcsine(x):
-    return math.asin(x)
+    return asin(x)
 
 
 def arccosine(x):
-    return math.acos(x)
+    return acos(x)
 
 
 def arctangent(x):
-    return math.atan(x)
+    return atan(x)
 
 
 def cosecant(x):
     try:
-        return 1/math.sin(x)
+        return 1/sin(x)
     except ZeroDivisionError:
         print('\nERROR! Division by zero.')
         return False
@@ -35,7 +35,7 @@ def cosecant(x):
 
 def secant(x):
     try:
-        return 1/math.cos(x)
+        return 1/cos(x)
     except ZeroDivisionError:
         print('\nERROR! Division by zero.')
         return False
@@ -43,7 +43,7 @@ def secant(x):
 
 def cotangent(x):
     try:
-        return 1/math.tan(x)
+        return 1/tan(x)
     except ZeroDivisionError:
         print('\nERROR! Division by zero.')
         return False
