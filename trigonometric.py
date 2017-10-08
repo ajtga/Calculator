@@ -6,4 +6,8 @@ def sine(x):
 
 
 def cosine(x):
-	return math.cos(x)
+    return math.cos(x)
+
+
+def tangent(x):
+    return math.tan(x)
