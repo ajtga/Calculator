@@ -23,3 +23,7 @@ def arccosine(x):
 
 def arctangent(x):
     return math.atan(x)
+
+
+def cosecant(x):
+    return 1/math.sin(x)
