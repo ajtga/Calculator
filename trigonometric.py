@@ -15,3 +15,7 @@ def tangent(x):
 
 def arcsine(x):
     return math.asin(x)
+
+
+def arccosine(x):
+    return math.acos(x)
