@@ -26,4 +26,8 @@ def arctangent(x):
 
 
 def cosecant(x):
-    return 1/math.sin(x)
+    try:
+        return 1/math.sin(x)
+    except ZeroDivisionError:
+        print('\nERROR! Division by zero.')
+        return False
