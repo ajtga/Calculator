@@ -1,7 +1,7 @@
-import arithmetic as arith
-import trigonometric as trig
+import math.arithmetic as arith
+import math.trigonometric as trig
 from collections import OrderedDict
-from interface import menu
+from gui.interface import menu
 
 
 operations = OrderedDict([('Add', arith.addition),
