@@ -1,5 +1,5 @@
-import math.arithmetic as arith
-import math.trigonometric as trig
+import Math.arithmetic as arith
+import Math.trigonometric as trig
 from collections import OrderedDict
 from gui.interface import menu
 
