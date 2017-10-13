@@ -5,7 +5,7 @@ Calculator
         - __init__.py
         - trigonometric.py
         - logarithmic.py
-        - loarithmic.py
+        - arithmetic.py
         - tests.py
     - interface/
         - __init__.py
